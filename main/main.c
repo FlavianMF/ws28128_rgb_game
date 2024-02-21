@@ -11,11 +11,15 @@
 
 #include "esp_log.h"
 
+#include "console_config.h"
+
 static const char *TAG = "main";
 
 void app_main(void)
 {
     ESP_LOGD(TAG, "Initializing the game");
+
+    console_config();
 
     return;
 }
